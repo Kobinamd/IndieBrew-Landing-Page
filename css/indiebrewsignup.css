@@ -1,0 +1,246 @@
+      *,
+      *::before,
+      *::after {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      
+      body {
+          background: linear-gradient(90deg, #eed6ea 0%, rgb(247, 244, 244) 100%);
+          font-family: 'DM Sans', sans-serif;
+          line-height: 1.5;
+      }
+      
+      .container {
+          width: 60%;
+          min-width: 750px;
+          margin: 0 auto;
+          border-radius: 5px;
+          display: flex;
+      }
+      /* header */
+      
+      .header {
+          min-width: 750px;
+          padding: 2em 0;
+          width: 60%;
+          margin: auto;
+      }
+      
+      .row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      
+      .back__link {
+          display: flex;
+          justify-content: space-around;
+          text-decoration: none;
+          color: #000;
+          font-weight: 900;
+      }
+      
+      .logo {
+          padding-left: 3em;
+      }
+      
+      .backarrow {
+          padding-right: 1em;
+      }
+      
+      .logo {
+          /* border: solid yellow 1px; */
+          display: flex;
+          align-items: center;
+      }
+      /* text container  */
+      /* Phone container design  */
+      
+      .text-section__text p {
+          font-size: 0.9rem;
+          padding-bottom: 2em;
+      }
+      
+      .text-section {
+          padding: 3em;
+          width: 50%;
+          align-self: center;
+      }
+      
+      .text-section h1 {
+          font-size: 1.8rem;
+          line-height: 1.2;
+          padding-bottom: 1.5em;
+      }
+      
+      .bold__text {
+          font-weight: 900;
+      }
+      
+      .emoji {
+          display: block;
+          float: left;
+          margin-right: 0.5em;
+          padding-bottom: 6em;
+      }
+      /* form container */
+      
+      .sign {
+          padding: 3em;
+          width: 50%;
+          background-color: #FFF;
+          border-radius: 5px;
+      }
+      
+      .signcon h2 {
+          color: black;
+          font-size: 1.12rem;
+          padding-bottom: 1rem;
+      }
+      /* Form container ends */
+      /* Design of forms */
+      
+      form div {
+          margin-bottom: 20px;
+      }
+      
+      label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 900;
+      }
+      
+      .input__group {
+          padding: 10px;
+          border-style: solid;
+          border-radius: 5px;
+          width: 100%;
+      }
+      
+      .check {
+          position: relative;
+      }
+      
+      .check label {
+          font-weight: 300;
+          display: inline-block;
+          width: 90%;
+          margin-left: 10px;
+      }
+      
+      input.accept {
+          margin-top: 4px;
+          float: left;
+      }
+      
+      .submit input {
+          padding: 10px 20px;
+          width: 100%;
+          background-color: #7344f5;
+          color: #fff;
+          border-radius: 5px;
+      }
+      
+      .submit input:hover {
+          border-color: rgb(0, 89, 255);
+          background-color: transparent;
+          color: #7344f5;
+          cursor: pointer;
+      }
+      
+      small {
+          color: red;
+      }
+      
+      .check a {
+          color: #7344f5;
+          font-weight: 600;
+      }
+      
+      .check a:hover {
+          text-decoration: none;
+      }
+      /* End of Form design  */
+      
+      .back {
+          display: none;
+      }
+      
+      @media (max-width: 800px) {
+          .container {
+              width: 50%;
+              min-width: 375px;
+              margin: 0 auto;
+              display: block;
+          }
+          .logo {
+              padding-left: 0;
+          }
+          .header {
+              width: 50%;
+              min-width: 375px;
+              padding: 2em 0;
+              width: 60%;
+              margin: auto;
+          }
+          .text-section {
+              padding: 0;
+              width: 100%;
+          }
+          /* form container */
+          .sign {
+              width: 100%;
+              background-color: #FFF;
+              border-radius: 5px;
+              border: solid 1px #ccc;
+          }
+      }
+      
+      @media (max-width: 376px) {
+          section {
+              width: 90%;
+              margin: auto;
+          }
+          .container {
+              width: 100%;
+              min-width: 100%;
+              margin: 0 auto;
+              display: block;
+          }
+          .header {
+              min-width: 100%;
+              padding: 2em 0;
+              width: 100%;
+              margin: auto;
+          }
+          .back__link {
+              display: none;
+          }
+          .back {
+              display: block;
+          }
+          .backa {
+              background-color: #FFF;
+              padding: 0.3em 0.4em 0.3em 0.6em;
+              border: 1px solid rgb(204, 204, 204);
+              border-radius: 3px;
+          }
+          .logo {
+              padding-left: 0;
+          }
+          .text-section {
+              width: 100%;
+          }
+          /* form container */
+          .sign {
+              width: 100%;
+              background-color: #FFF;
+              border-radius: 5px;
+              border: solid 1px #ccc;
+          }
+          .check label {
+              width: 80%;
+          }
+      }
